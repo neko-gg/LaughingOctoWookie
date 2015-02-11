@@ -1,0 +1,36 @@
+#ifndef MECH_H
+#define MECH_H
+
+#define SERVO_PUSH_SPEED  60
+#define SERVO_PUSH_DELAY  100
+
+#define SERVO_PUSH_HOLD_DEGREE     42
+#define SERVO_PUSH_RELEASE_DEGREE  25
+#define SERVO_PUSH_PUSH_C_DEGREE   75
+#define SERVO_PUSH_PUSH_CW_DEGREE  75
+#define SERVO_PUSH_PUSH_CCW_DEGREE 75
+
+#define SERVO_ROTATE_SPEED  255
+#define SERVO_ROTATE_DELAY  200
+
+#define SERVO_ROTATE_C_DEGREE    95
+#define SERVO_ROTATE_CW_DEGREE   15
+#define SERVO_ROTATE_CCW_DEGREE 180
+
+#define SERVO_ROTATE_CW_TO_C_HOLD_DEGREE  102
+#define SERVO_ROTATE_CCW_TO_C_HOLD_DEGREE  88
+#define SERVO_ROTATE_TO_CW_HOLD_DEGREE      9
+#define SERVO_ROTATE_TO_CCW_HOLD_DEGREE   175
+#define SERVO_ROTATE_TO_CCW_HOLD2_DEGREE   80
+#define SERVO_ROTATE_TO_CCW_HOLD3_DEGREE  102
+
+namespace mech {
+  void hold();
+  void release();
+  void push();
+  void rotateToC();
+  void rotateToCW();
+  void rotateToCCW();
+}
+
+#endif
